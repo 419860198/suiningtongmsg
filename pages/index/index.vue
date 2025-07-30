@@ -58,19 +58,19 @@ export default {
             });
         },
         onShare() {
-			if (isInApp()) {
-				console.log('app中可以分享');
-				postUniMessage({
-					method: 'share',
-					title: '名称',
-					weburl: 'https://m.baidu.com'
-				});
-			} else {
-				uni.showToast({
-					title: '非app 环境不支持分享',
-					icon: 'none'
-				})
-			}
+            if (isInApp) {
+                console.log('app中可以分享');
+                postUniMessage({
+                    method: 'share',
+                    title: '名称',
+                    weburl: 'https://m.baidu.com'
+                });
+            } else {
+                uni.showToast({
+                    title: '非app 环境不支持分享',
+                    icon: 'none'
+                });
+            }
         }
     }
 };

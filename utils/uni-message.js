@@ -23,9 +23,5 @@ export function postUniMessage(params) {
 	// #endif
 };
 
-export const isInApp = ()=> {
-	if (typeof plus !== 'undefined') {
-		return true;
-	}
-	return false;
-};
+// 判断h5是否运行在app中
+export const isInApp = !!window.plus
