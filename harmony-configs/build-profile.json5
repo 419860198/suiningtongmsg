@@ -1,0 +1,74 @@
+{
+  "app": {
+    "signingConfigs": [
+      {
+        "name": "default",
+        "type": "HarmonyOS",
+        "material": {
+          "certpath": "/Users/zhangxiaobo/.ohos/config/default_app-harmony-b82962ff_FHQE5JllmuJkB8C4BXGNCQjtc4uMYUo2QG3QSaH0-KI=.cer",
+          "keyAlias": "debugKey",
+          "keyPassword": "0000001B6793BDBDEFFDDF6B76F5ED1FA4FF22DA5C7095F3D0208AB0CE04AE3551504D76795D2E3485B870",
+          "profile": "/Users/zhangxiaobo/.ohos/config/default_app-harmony-b82962ff_FHQE5JllmuJkB8C4BXGNCQjtc4uMYUo2QG3QSaH0-KI=.p7b",
+          "signAlg": "SHA256withECDSA",
+          "storeFile": "/Users/zhangxiaobo/.ohos/config/default_app-harmony-b82962ff_FHQE5JllmuJkB8C4BXGNCQjtc4uMYUo2QG3QSaH0-KI=.p12",
+          "storePassword": "0000001B0FF79752CC5DDCE595DE1DA97BBC1A27E9788CA41BE7115490F9BE7B959E2EE57DD25635ABC8DA"
+        }
+      }
+    ],
+    "products": [
+      {
+        "name": "default",
+        "signingConfig": "default",
+        "compatibleSdkVersion": "5.0.0(12)",
+        "runtimeOS": "HarmonyOS",
+        "compatibleSdkVersionStage": "beta5",
+        "buildOption": {
+          "strictMode": {
+            "caseSensitiveCheck": true,
+            "useNormalizedOHMUrl": true
+          }
+        }
+      },
+      {
+        "name": "release",
+        "signingConfig": "release",
+        "compatibleSdkVersion": "5.0.0(12)",
+        "runtimeOS": "HarmonyOS",
+        "compatibleSdkVersionStage": "beta5",
+        "buildOption": {
+          "strictMode": {
+            "caseSensitiveCheck": true,
+            "useNormalizedOHMUrl": true
+          }
+        }
+      }
+    ],
+    "buildModeSet": [
+      {
+        "name": "debug"
+      },
+      {
+        "name": "release"
+      }
+    ]
+  },
+  "modules": [
+    {
+      "name": "uni_modules__xb_baiduasr",
+      "srcPath": "./uni_modules/xb-baiduasr"
+    },
+    {
+      "name": "entry",
+      "srcPath": "./entry",
+      "targets": [
+        {
+          "name": "default",
+          "applyToProducts": [
+            "default",
+            "release"
+          ]
+        }
+      ]
+    }
+  ]
+}

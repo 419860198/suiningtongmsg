@@ -1,0 +1,61 @@
+{
+	"string": [{
+			"name": "module_desc",
+			"value": "module description"
+		},
+		{
+			"name": "EntryAbility_desc",
+			"value": "description"
+		},
+		{
+			"name": "EntryAbility_label",
+			"value": "$string:app_name"
+		},
+		{
+			"name": "location_tips",
+			"value": "我们使用位置信息为您推荐天气、政务地图、旅游等信息",
+			"usedScene": {
+				"when": "inuse"
+			}
+		},
+		{
+			"name": "camera_tips",
+			"value": "我们使用摄像头帮您更换头像、修改证照等",
+			"usedScene": {
+				"when": "inuse"
+			}
+		},
+		{
+			"name": "microphone_tips",
+			"value": "我们使用麦克风帮你语音转文字，方便您搜索内容",
+			"usedScene": {
+				"when": "inuse"
+			}
+		},
+		{
+			"name": "writeImage_tips",
+			"value": "我们使用相册帮您保存您的合同，简历等信息",
+			"usedScene": {
+				"when": "inuse"
+			}
+		},
+		{
+			"name": "readImage_tips",
+			"value": "我们使用相册帮您更换头像、修改证照等",
+			"usedScene": {
+				"when": "inuse"
+			}
+		},
+		{
+			"name": "readMedia",
+			"value": "我们使用相册帮您保存您的合同，简历等信息",
+			"usedScene": {
+				"when": "inuse"
+			}
+		},
+		{
+			"name": "reason",
+			"value": "语音识别需要用，帮你语音转文字，方便您搜索内容"
+		}
+	]
+}
