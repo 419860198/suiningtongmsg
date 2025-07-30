@@ -23,12 +23,4 @@ export function postUniMessage(params) {
 	// #endif
 };
 
-export const isInWechat = () => {
-	const ua = navigator.userAgent;
-	if (/miniProgram/i.test(ua) && /micromessenger/i.test(ua)) {
-		return true
-	} else {
-		return false
-	}
-
-}
+export const isInApp = !!plus;
