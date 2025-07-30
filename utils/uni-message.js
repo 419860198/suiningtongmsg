@@ -23,4 +23,9 @@ export function postUniMessage(params) {
 	// #endif
 };
 
-export const isInApp = !!plus;
+export const isInApp = ()=> {
+	if (typeof plus !== 'undefined') {
+		return true;
+	}
+	return false;
+};
